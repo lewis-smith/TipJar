@@ -10,10 +10,10 @@ import Foundation
 
 public struct TipProducts {
 
-    fileprivate static let productIdentifiers: Set<ProductIdentifier> = ["TIP_1",
-                                                                         "TIP_2",
-                                                                         "TIP_3",
-                                                                         "TIP_4"]
+    fileprivate static let productIdentifiers: Set<ProductIdentifier> = [Bundle.main.bundleIdentifier! + ".TIP_1",
+                                                                         Bundle.main.bundleIdentifier! + ".TIP_2",
+                                                                         Bundle.main.bundleIdentifier! + ".TIP_3",
+                                                                         Bundle.main.bundleIdentifier! + ".TIP_4"]
 
     public static let store = IAPHelper(productIds: TipProducts.productIdentifiers)
 }
