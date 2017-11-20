@@ -265,6 +265,7 @@ extension IAPHelper: SKPaymentTransactionObserver {
                     }
                     else {
                         // ???!!!???
+                        // This should never happen
                     }
                 }
             }
