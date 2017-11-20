@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TipJarViewController" customModule="TipJar" customModuleProvider="target">
+            <connections>
+                <outlet property="tipAmountLabel" destination="aUW-dh-Zby" id="exf-Yw-T8h"/>
+                <outlet property="titleLabel" destination="9Le-a9-vWs" id="rUo-G2-rrF"/>
+                <outlet property="view" destination="spA-yB-X8M" id="wAy-gB-v4I"/>
+                <outletCollection property="tipButtons" destination="rA0-s2-67Y" collectionClass="NSMutableArray" id="UjE-kp-UFh"/>
+                <outletCollection property="tipButtons" destination="bbr-4h-gn7" collectionClass="NSMutableArray" id="A92-xS-9aV"/>
+                <outletCollection property="tipButtons" destination="Nvm-gI-5GM" collectionClass="NSMutableArray" id="e31-g7-Rv0"/>
+                <outletCollection property="tipButtons" destination="TKW-zz-2Xp" collectionClass="NSMutableArray" id="RW9-GN-9cC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="spA-yB-X8M">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you're enjoying &lt;appname&gt; and fancy dropping a few spare coins into the tip jar, it would be most appreciated." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Le-a9-vWs">
+                    <rect key="frame" x="16" y="80" width="343" height="61"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙂 Small Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9je-Dp-Mfk">
+                    <rect key="frame" x="32" y="165" width="160" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="a1t-C4-jD5"/>
+                        <constraint firstAttribute="height" constant="21" id="vXP-dc-vc4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rA0-s2-67Y">
+                    <rect key="frame" x="255" y="160" width="88" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="88" id="G8X-fs-lvL"/>
+                        <constraint firstAttribute="height" constant="30" id="T04-k0-miU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="--"/>
+                    <connections>
+                        <action selector="tipButtonTapped:" destination="-1" eventType="touchUpInside" id="3Xw-rG-R6y"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😀 Medium Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGb-yk-Jmx">
+                    <rect key="frame" x="32" y="203" width="160" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbr-4h-gn7">
+                    <rect key="frame" x="255" y="198" width="88" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="--"/>
+                    <connections>
+                        <action selector="tipButtonTapped:" destination="-1" eventType="touchUpInside" id="5R3-RK-Xvo"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😃 Large Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8un-dH-k0a">
+                    <rect key="frame" x="32" y="240.5" width="160" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvm-gI-5GM">
+                    <rect key="frame" x="255" y="236" width="88" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="--"/>
+                    <connections>
+                        <action selector="tipButtonTapped:" destination="-1" eventType="touchUpInside" id="sB1-vJ-4de"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😍 Enormous Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjc-n4-d7w">
+                    <rect key="frame" x="32" y="279" width="160" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKW-zz-2Xp">
+                    <rect key="frame" x="255" y="274" width="88" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="--"/>
+                    <connections>
+                        <action selector="tipButtonTapped:" destination="-1" eventType="touchUpInside" id="Tes-bi-5gK"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have tipped a total of -- 😔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUW-dh-Zby">
+                    <rect key="frame" x="66.5" y="328.5" width="242" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your tip total should automatically sync to all your devices via iCloud, just give it a minute." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBJ-2O-tRx">
+                    <rect key="frame" x="16" y="373.5" width="343" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3P-fT-vkx">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="Tip Jar" id="ScV-CK-v5W">
+                            <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="LB5-LR-Lsz">
+                                <connections>
+                                    <action selector="doneTapped:" destination="-1" id="UIc-mQ-KLQ"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9Le-a9-vWs" firstAttribute="top" secondItem="K3P-fT-vkx" secondAttribute="bottom" constant="16" id="0jq-CW-Gom"/>
+                <constraint firstItem="dKA-s6-n3n" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iBJ-2O-tRx" secondAttribute="bottom" priority="999" constant="8" id="0ra-es-R2i"/>
+                <constraint firstItem="iBJ-2O-tRx" firstAttribute="top" secondItem="aUW-dh-Zby" secondAttribute="bottom" constant="24" id="4Ex-1K-HQE"/>
+                <constraint firstItem="dKA-s6-n3n" firstAttribute="trailing" secondItem="9Le-a9-vWs" secondAttribute="trailing" constant="16" id="4mW-Hs-3VR"/>
+                <constraint firstItem="8un-dH-k0a" firstAttribute="leading" secondItem="aGb-yk-Jmx" secondAttribute="leading" id="7uO-KC-Ly5"/>
+                <constraint firstItem="rA0-s2-67Y" firstAttribute="centerY" secondItem="9je-Dp-Mfk" secondAttribute="centerY" id="8Dx-tc-Tfp"/>
+                <constraint firstItem="Nvm-gI-5GM" firstAttribute="centerY" secondItem="8un-dH-k0a" secondAttribute="centerY" id="AGD-Y4-aKN"/>
+                <constraint firstItem="iBJ-2O-tRx" firstAttribute="width" secondItem="9Le-a9-vWs" secondAttribute="width" id="CaP-iX-1d6"/>
+                <constraint firstItem="TKW-zz-2Xp" firstAttribute="trailing" secondItem="Nvm-gI-5GM" secondAttribute="trailing" id="DSq-JS-veb"/>
+                <constraint firstItem="sjc-n4-d7w" firstAttribute="width" secondItem="8un-dH-k0a" secondAttribute="width" id="GbI-ko-vzg"/>
+                <constraint firstItem="bbr-4h-gn7" firstAttribute="centerY" secondItem="aGb-yk-Jmx" secondAttribute="centerY" id="Hoq-Ff-xAk"/>
+                <constraint firstItem="Nvm-gI-5GM" firstAttribute="width" secondItem="bbr-4h-gn7" secondAttribute="width" id="NqR-jM-d0s"/>
+                <constraint firstItem="bbr-4h-gn7" firstAttribute="height" secondItem="rA0-s2-67Y" secondAttribute="height" id="NvO-LG-amy"/>
+                <constraint firstItem="TKW-zz-2Xp" firstAttribute="width" secondItem="Nvm-gI-5GM" secondAttribute="width" id="P3n-E2-HgK"/>
+                <constraint firstItem="8un-dH-k0a" firstAttribute="width" secondItem="aGb-yk-Jmx" secondAttribute="width" id="Q6d-al-eV8"/>
+                <constraint firstItem="sjc-n4-d7w" firstAttribute="leading" secondItem="8un-dH-k0a" secondAttribute="leading" id="QA4-Uc-hZa"/>
+                <constraint firstItem="aGb-yk-Jmx" firstAttribute="height" secondItem="9je-Dp-Mfk" secondAttribute="height" id="R6T-q9-Hu0"/>
+                <constraint firstItem="bbr-4h-gn7" firstAttribute="trailing" secondItem="rA0-s2-67Y" secondAttribute="trailing" id="RCx-ud-cvQ"/>
+                <constraint firstItem="sjc-n4-d7w" firstAttribute="height" secondItem="8un-dH-k0a" secondAttribute="height" id="SAH-cG-Dtk"/>
+                <constraint firstItem="Nvm-gI-5GM" firstAttribute="height" secondItem="bbr-4h-gn7" secondAttribute="height" id="VRj-Tz-gHY"/>
+                <constraint firstItem="TKW-zz-2Xp" firstAttribute="height" secondItem="Nvm-gI-5GM" secondAttribute="height" id="VUY-zM-cDV"/>
+                <constraint firstItem="bbr-4h-gn7" firstAttribute="width" secondItem="rA0-s2-67Y" secondAttribute="width" id="Xvz-BT-Tc0"/>
+                <constraint firstItem="dKA-s6-n3n" firstAttribute="trailing" secondItem="rA0-s2-67Y" secondAttribute="trailing" constant="32" id="b1e-Z7-i7V"/>
+                <constraint firstItem="Nvm-gI-5GM" firstAttribute="trailing" secondItem="bbr-4h-gn7" secondAttribute="trailing" id="d6p-y2-ag3"/>
+                <constraint firstItem="aUW-dh-Zby" firstAttribute="top" secondItem="TKW-zz-2Xp" secondAttribute="bottom" constant="24" id="ea6-wj-5yb"/>
+                <constraint firstItem="K3P-fT-vkx" firstAttribute="trailing" secondItem="dKA-s6-n3n" secondAttribute="trailing" id="gC3-bc-LGZ"/>
+                <constraint firstItem="TKW-zz-2Xp" firstAttribute="top" secondItem="Nvm-gI-5GM" secondAttribute="bottom" constant="8" id="h3y-0j-ue4"/>
+                <constraint firstItem="Nvm-gI-5GM" firstAttribute="top" secondItem="bbr-4h-gn7" secondAttribute="bottom" constant="8" id="lGc-1X-VD1"/>
+                <constraint firstItem="aGb-yk-Jmx" firstAttribute="leading" secondItem="9je-Dp-Mfk" secondAttribute="leading" id="lto-r2-OZu"/>
+                <constraint firstItem="9je-Dp-Mfk" firstAttribute="leading" secondItem="dKA-s6-n3n" secondAttribute="leading" constant="32" id="mPm-9X-nzR"/>
+                <constraint firstItem="8un-dH-k0a" firstAttribute="height" secondItem="aGb-yk-Jmx" secondAttribute="height" id="mdB-Rn-a7l"/>
+                <constraint firstItem="bbr-4h-gn7" firstAttribute="top" secondItem="rA0-s2-67Y" secondAttribute="bottom" constant="8" id="pSQ-TM-4Yo"/>
+                <constraint firstItem="aGb-yk-Jmx" firstAttribute="width" secondItem="9je-Dp-Mfk" secondAttribute="width" id="vaB-zU-87L"/>
+                <constraint firstItem="TKW-zz-2Xp" firstAttribute="centerY" secondItem="sjc-n4-d7w" secondAttribute="centerY" id="vf8-U6-xGp"/>
+                <constraint firstItem="aUW-dh-Zby" firstAttribute="centerX" secondItem="spA-yB-X8M" secondAttribute="centerX" id="wTI-BH-Jz9"/>
+                <constraint firstItem="iBJ-2O-tRx" firstAttribute="centerX" secondItem="spA-yB-X8M" secondAttribute="centerX" id="wfg-im-hTt"/>
+                <constraint firstItem="K3P-fT-vkx" firstAttribute="top" secondItem="dKA-s6-n3n" secondAttribute="top" id="xB8-of-a4F"/>
+                <constraint firstItem="K3P-fT-vkx" firstAttribute="leading" secondItem="dKA-s6-n3n" secondAttribute="leading" id="yAp-Pt-Wkr"/>
+                <constraint firstItem="9je-Dp-Mfk" firstAttribute="top" secondItem="9Le-a9-vWs" secondAttribute="bottom" constant="24" id="z73-q2-93k"/>
+                <constraint firstItem="9Le-a9-vWs" firstAttribute="leading" secondItem="dKA-s6-n3n" secondAttribute="leading" constant="16" id="zCm-Ik-6oU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="dKA-s6-n3n"/>
+            <point key="canvasLocation" x="23.5" y="53"/>
+        </view>
+    </objects>
+</document>

@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F617AA791F98C43900255840 /* JustHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F617AA781F98C43900255840 /* JustHUD.swift */; };
 		F6AF2D361F7A7B280077F422 /* TipJar.h in Headers */ = {isa = PBXBuildFile; fileRef = F6AF2D341F7A7B280077F422 /* TipJar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6AF2D3F1F7A7B590077F422 /* TipJarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF2D3D1F7A7B590077F422 /* TipJarViewController.swift */; };
+		F6AF2D401F7A7B590077F422 /* TipJarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6AF2D3E1F7A7B590077F422 /* TipJarViewController.xib */; };
+		F6AF2D421F7A7C530077F422 /* TipJar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AF2D411F7A7C530077F422 /* TipJar.swift */; };
+		F6DD678C1F84D95400D8F164 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DD678B1F84D95400D8F164 /* IAPHelper.swift */; };
+		F6DD678E1F84D98900D8F164 /* TipProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DD678D1F84D98900D8F164 /* TipProducts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F617AA781F98C43900255840 /* JustHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustHUD.swift; sourceTree = "<group>"; };
 		F6AF2D311F7A7B280077F422 /* TipJar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TipJar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6AF2D341F7A7B280077F422 /* TipJar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipJar.h; sourceTree = "<group>"; };
 		F6AF2D351F7A7B280077F422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6AF2D3D1F7A7B590077F422 /* TipJarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJarViewController.swift; sourceTree = "<group>"; };
+		F6AF2D3E1F7A7B590077F422 /* TipJarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipJarViewController.xib; sourceTree = "<group>"; };
+		F6AF2D411F7A7C530077F422 /* TipJar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJar.swift; sourceTree = "<group>"; };
+		F6DD678B1F84D95400D8F164 /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		F6DD678D1F84D98900D8F164 /* TipProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipProducts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +58,24 @@
 		F6AF2D331F7A7B280077F422 /* TipJar */ = {
 			isa = PBXGroup;
 			children = (
+				F6AF2D3C1F7A7B3E0077F422 /* Classes */,
 				F6AF2D341F7A7B280077F422 /* TipJar.h */,
 				F6AF2D351F7A7B280077F422 /* Info.plist */,
 			);
 			path = TipJar;
+			sourceTree = "<group>";
+		};
+		F6AF2D3C1F7A7B3E0077F422 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F617AA781F98C43900255840 /* JustHUD.swift */,
+				F6DD678B1F84D95400D8F164 /* IAPHelper.swift */,
+				F6AF2D3D1F7A7B590077F422 /* TipJarViewController.swift */,
+				F6AF2D3E1F7A7B590077F422 /* TipJarViewController.xib */,
+				F6AF2D411F7A7C530077F422 /* TipJar.swift */,
+				F6DD678D1F84D98900D8F164 /* TipProducts.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +121,7 @@
 				TargetAttributes = {
 					F6AF2D301F7A7B280077F422 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AF2D401F7A7B590077F422 /* TipJarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AF2D3F1F7A7B590077F422 /* TipJarViewController.swift in Sources */,
+				F617AA791F98C43900255840 /* JustHUD.swift in Sources */,
+				F6DD678E1F84D98900D8F164 /* TipProducts.swift in Sources */,
+				F6DD678C1F84D95400D8F164 /* IAPHelper.swift in Sources */,
+				F6AF2D421F7A7C530077F422 /* TipJar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +286,7 @@
 		F6AF2D3A1F7A7B280077F422 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lewismakesapps.TipJar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +309,7 @@
 		F6AF2D3B1F7A7B280077F422 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
