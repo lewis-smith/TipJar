@@ -28,7 +28,7 @@ public class TipJarViewController: UIViewController {
             button.isEnabled = false
         }
 
-        self.titleLabel.text = "If you're enjoying \(Bundle.main.infoDictionary!["CFBundleName"] as? String ?? "this app") and fancy dropping a few spare coins into the tip jar, it would be most appreicated."
+        self.titleLabel.text = "If you're enjoying \(Bundle.main.infoDictionary!["CFBundleDisplayName"] as? String ?? "this app") and fancy dropping a few spare coins into the tip jar, it would be most appreicated."
 
         self.updateTipButtonValues(Notification.init(name: IAPHelper.IAPHelperReadyNotification))
         self.updatePaidAmount()

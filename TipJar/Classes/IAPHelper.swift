@@ -4,7 +4,7 @@ import StoreKit
 public typealias ProductIdentifier = String
 public typealias ProductsRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> ()
 
-open class IAPHelper : NSObject  {
+@objc open class IAPHelper : NSObject  {
 
     public static let IAPHelperPurchaseNotification = Notification.Name("IAPHelperPurchaseNotification")
     static let IAPHelperFailNotification = Notification.Name("IAPHelperFailNotification")
@@ -37,7 +37,7 @@ open class IAPHelper : NSObject  {
 
 extension IAPHelper {
 
-    public func requestProducts(completionHandler: @escaping ProductsRequestCompletionHandler) {
+    @objc public func requestProducts(completionHandler: @escaping ProductsRequestCompletionHandler) {
         productsRequest?.cancel()
         productsRequestCompletionHandler = completionHandler
 

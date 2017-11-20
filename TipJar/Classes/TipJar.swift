@@ -10,11 +10,11 @@ import UIKit
 
 final public class TipJar: NSObject {
 
-    public static let shared = TipJar()
+    @objc public static let shared = TipJar()
 
     override private init() {}
 
-    public func tipJarViewController() -> TipJarViewController {
+    @objc public func tipJarViewController() -> TipJarViewController {
         let bundle = Bundle(for: TipJar.self)
 
         return TipJarViewController(nibName: "TipJarViewController", bundle: bundle)

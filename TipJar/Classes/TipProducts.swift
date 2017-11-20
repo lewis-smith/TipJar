@@ -8,14 +8,16 @@
 
 import Foundation
 
-public struct TipProducts {
+@objc public class TipProducts: NSObject {
+
+    override private init() {}
 
     fileprivate static let productIdentifiers: Set<ProductIdentifier> = [Bundle.main.bundleIdentifier! + ".TIP_1",
                                                                          Bundle.main.bundleIdentifier! + ".TIP_2",
                                                                          Bundle.main.bundleIdentifier! + ".TIP_3",
                                                                          Bundle.main.bundleIdentifier! + ".TIP_4"]
 
-    public static let store = IAPHelper(productIds: TipProducts.productIdentifiers)
+    @objc public static let store = IAPHelper(productIds: TipProducts.productIdentifiers)
 }
 
 func resourceNameForProductIdentifier(_ productIdentifier: String) -> String? {
