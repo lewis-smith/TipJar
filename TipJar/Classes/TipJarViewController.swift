@@ -14,12 +14,15 @@ public class TipJarViewController: UIViewController {
     @IBOutlet var tipButtons: [UIButton]!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tipAmountLabel: UILabel!
+    @IBOutlet weak var navigationBar: UINavigationBar!
 
     var tipProducts: [SKProduct]?
 
     public override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationBar.delegate = self
+        
         for button in tipButtons {
             button.layer.borderWidth = 1
             button.layer.cornerRadius = 5
@@ -130,5 +133,12 @@ public class TipJarViewController: UIViewController {
         }
 
         self.tipAmountLabel.text = "You have tipped a total of \(IAPHelper.totalSpend() as String) \(emojii)"
+    }
+}
+
+//MARK: - Nav bar extension
+extension TipJarViewController : UINavigationBarDelegate {
+    public func position(for bar: UIBarPositioning) -> UIBarPosition {
+        return .topAttached
     }
 }

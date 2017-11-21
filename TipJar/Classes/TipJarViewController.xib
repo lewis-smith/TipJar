@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TipJarViewController" customModule="TipJar" customModuleProvider="target">
             <connections>
+                <outlet property="navigationBar" destination="K3P-fT-vkx" id="E3Q-SG-wF4"/>
                 <outlet property="tipAmountLabel" destination="aUW-dh-Zby" id="exf-Yw-T8h"/>
                 <outlet property="titleLabel" destination="9Le-a9-vWs" id="rUo-G2-rrF"/>
                 <outlet property="view" destination="spA-yB-X8M" id="wAy-gB-v4I"/>
