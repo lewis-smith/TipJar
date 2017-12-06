@@ -14,7 +14,7 @@ public class TipJarViewController: UIViewController {
     @IBOutlet var tipButtons: [UIButton]!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tipAmountLabel: UILabel!
-    @IBOutlet weak var navigationBar: UINavigationBar!
+    @IBOutlet public weak var navigationBar: UINavigationBar!
 
     var tipProducts: [SKProduct]?
 
@@ -22,7 +22,7 @@ public class TipJarViewController: UIViewController {
         super.viewDidLoad()
 
         self.navigationBar.delegate = self
-        
+
         for button in tipButtons {
             button.layer.borderWidth = 1
             button.layer.cornerRadius = 5
@@ -138,6 +138,7 @@ public class TipJarViewController: UIViewController {
 
 //MARK: - Nav bar extension
 extension TipJarViewController : UINavigationBarDelegate {
+    //https://stackoverflow.com/a/21548900/1343140
     public func position(for bar: UIBarPositioning) -> UIBarPosition {
         return .topAttached
     }

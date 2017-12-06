@@ -3,11 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
+	<dict/>
+	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>TipJar.xcscheme</key>
+		<key>F6AF2D301F7A7B280077F422</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>40</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
