@@ -116,7 +116,7 @@
 		F6AF2D281F7A7B280077F422 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Lewis Makes Apps";
 				TargetAttributes = {
 					F6AF2D301F7A7B280077F422 = {
@@ -324,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lewismakesapps.TipJar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
